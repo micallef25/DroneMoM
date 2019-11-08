@@ -13,7 +13,7 @@ Then, follow the installation steps below to install the needed components on yo
 
 ### ROS Core
 
-Install the `ros-melodic-ros-base` or `ros-kinetic-ros-base` package on your Jetson following these directions:
+Install the `ros-melodic-ros-base`package on your Jetson following these directions:
 
 https://www.stereolabs.com/blog/ros-and-nvidia-jetson-nano/
 
