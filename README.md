@@ -1,7 +1,7 @@
 # Drone Mom
 ## CIS565 Final Project for John Marcao, Eric Micallef, and Taylor Nelms
 
-### Build 
+## Build 
 
 ## Do not clone this repo until the instructions tell you to.
 
@@ -11,14 +11,15 @@ you need to build a ROS workspace first...
 
 First, install the latest [JetPack](https://developer.nvidia.com/embedded/jetpack) on your Jetson (JetPack 4.2.2 for ROS Melodic or JetPack 3.3 for ROS Kinetic on TX1/TX2).
 
-Once you are logged onto your jetson following the instructions below. 
+Once you are logged onto your jetson continue.
+
 ### ROS Core
 
 Install the `ros-melodic-ros-base`package on your Jetson following these directions:
 
 https://www.stereolabs.com/blog/ros-and-nvidia-jetson-nano/
 
-or follow these commands ( information on the commands is in link above )
+or, here are the necessary commands ( information on the commands is in link above )
 
 ```bash
 $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -31,10 +32,7 @@ $ echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
-
-Depending on which version of ROS you're using, install some additional dependencies:
-
-#### ROS Melodic dependencies
+For our project we will need some additional nodes. Install the necessary dependencies by running the commands below. This assumees you are running ROS melodic.
 
 ```bash
 $ sudo apt-get install ros-melodic-image-transport
@@ -42,14 +40,14 @@ $ sudo apt-get install ros-melodic-image-publisher
 $ sudo apt-get install ros-melodic-vision-msgs
 ```
 
-#### create Workspace
+#### Create Workspace
 
-Now you must make the catkin workspace or the DroneMoM workspace. How ever you like to think about it.
+Now you must make the catkin workspace or your DroneMoM workspace. How ever you like to think about it.
 
 Instructions can be found here:
 http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment#Create_a_ROS_Workspace
 
-Or follow these commands. The workspace can be created where ever you are most comfortable below is an example of mind.
+Or follow these commands. The workspace can be created where ever you are most comfortable below is an example of mine. Please note that catkin looks for the `_ws` so a workspace names `drone_mom_ws` will fail to build.
 
 ```bash
 $ mkdir -p ~/CIS565/droneMoM_ws/src
@@ -60,19 +58,19 @@ $ source devel/setup.bash
 $ echo $ROS_PACKAGE_PATH
 ```
 
-Ensure that the path from the echo output matches your path. Should be something like
+Ensure that the path from the echo output matches your path. Assuming you are running ROS melodic it will look something like this
 
-/home/youruser/CIS565/droneMoM_ws/src:/opt/ros/melodic/share
+`/home/youruser/CIS565/droneMoM_ws/src:/opt/ros/melodic/share`
 
 ### Clone!
 
-Now you can clone this repo into the src folder of your newly crated ros workspace!
+Now you can clone this repo into the src folder of your newly crated ROS workspace!
 
 ### Build 
 
-navigate to your workspace so ~/CIS565/droneMoM_ws/src
+navigate to your workspace so `~/CIS565/droneMoM_ws/src`
 
-and type 'catkin_make' This will build everything. Ensure there are no errors. Report to me if there are.
+and type `catkin_make` This will build everything. Ensure there are no errors. Report to me if there are.
 
 That is it! Now you have ROS running and can make your ROS nodes.
 
