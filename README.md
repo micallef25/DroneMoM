@@ -1,9 +1,9 @@
-# Onboard UAV Photogrammetry on NVIDIA Jetson Platform
+# Drone Mom
 ## CIS565 Final Project for John Marcao, Eric Micallef, and Taylor Nelms
-### Drone Mom
 
-### This guide will install everything you need to get started with ROS
+### This guide will install everything you need to get started with ROS on the Jetson Nano development setup please refer to the readme in the setup folder.
 
+## Do not clone this repo until the instructions tell you to.
 
 ## Installation
 
