@@ -15,9 +15,8 @@ Once you are logged onto your jetson continue.
 
 ### ROS Core
 
-Install the `ros-melodic-ros-base`package on your Jetson following these directions:
-
-https://www.stereolabs.com/blog/ros-and-nvidia-jetson-nano/
+Install the `ros-melodic-ros-base`package on your Jetson following [these](
+https://www.stereolabs.com/blog/ros-and-nvidia-jetson-nano/) directions:
 
 or, here are the necessary commands ( information on the commands is in link above )
 
@@ -44,7 +43,7 @@ $ sudo apt-get install ros-melodic-vision-msgs
 
 Now you must make the catkin workspace or your DroneMoM workspace. How ever you like to think about it.
 
-Instructions can be found *[here](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment#Create_a_ROS_Workspace):
+Instructions can be found [here](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment#Create_a_ROS_Workspace):
 
 Or follow these commands. The workspace can be created where ever you are most comfortable below is an example of mine. Please note that catkin looks for the `_ws` so a workspace names `drone_mom_ws` will fail to build.
 
@@ -61,7 +60,7 @@ Ensure that the path from the echo output matches your path. Assuming you are ru
 
 `/home/youruser/CIS565/droneMoM_ws/src:/opt/ros/melodic/share`
 
-### Clone!
+### Clone
 
 Now you can clone this repo into the src folder of your newly crated ROS workspace!
 
