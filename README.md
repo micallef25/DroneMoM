@@ -5,12 +5,13 @@
 
 ## Do not clone this repo until the instructions tell you to.
 
+you need to build a ROS workspace first...
+
 ## Installation
 
 First, install the latest [JetPack](https://developer.nvidia.com/embedded/jetpack) on your Jetson (JetPack 4.2.2 for ROS Melodic or JetPack 3.3 for ROS Kinetic on TX1/TX2).
 
-Then, follow the installation steps below to install the needed components on your Jetson:
-
+Once you are logged onto your jetson following the instructions below. 
 ### ROS Core
 
 Install the `ros-melodic-ros-base`package on your Jetson following these directions:
