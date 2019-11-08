@@ -1,7 +1,7 @@
 # Drone Mom
 ## CIS565 Final Project for John Marcao, Eric Micallef, and Taylor Nelms
 
-## Build 
+## Build Instructions
 
 ## Do not clone this repo until the instructions tell you to.
 
